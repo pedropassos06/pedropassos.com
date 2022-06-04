@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    padding-top: 108px;
+    padding-bottom: 50px;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.technical-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.table {
+    font-family: 'Courier Prime', monospace;
+    border-collapse: collapse;
+    color: #fff;
+}
+  
+.table th {
+    text-align: right;
+    border-top: 2px solid #009578;
+    border-bottom: 2px solid #009578;
+}
+  
+.table td,
+.search-input {
+    font-size: 1em;
+    padding: 0.6em 1em;
+}
+  
+.search-input {
+    border: none;
+    outline: none;
+    font-family: 'Courier Prime', monospace;
+    width: 100%;
+}
+
+.skill-info {
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    border-left: 0.4px solid #fff;
+}
+
+.technical-header {
+    color: #fff;
+    font-family: 'Courier Prime', monospace;
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 55px;
+    align-self: center;
+}
+  
+.courses-container {
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table tbody tr td {
+    border: 0.4px solid #fff;
+}
+
+
+.skill-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contact-info-header {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+.text p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'Courier Prime', monospace;
+}

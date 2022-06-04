@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/images/logo-principal.png" />
+    <link rel="stylesheet" type="text/css" href="/css/contact-me.css" />
+    <link rel="stylesheet" href="/assets/header.css">
+    <link rel="stylesheet" href="/assets/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Me</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+    <script>  
+    $(function(){ 
+        $("#header").load("/assets/header.html");  
+        $("#footer").load("/assets/footer.html");  
+    }); 
+    </script> 
+</head>
+<body>
+    <div id="header"></div>
+        <section class="contact">
+            <div class="contact-content">
+                <h2 class="contact-content-header">Get in touch!</h2>
+            </div>
+            <div class="container">
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3 class="contact-info-header">Location</h3>
+                            <p>Malden, MA</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3 class="contact-info-header">Phone</h3>
+                            <p>(781) 866-0890</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3 class="contact-info-header">Email</h3>
+                            <p>pccp001@bucknell.edu</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="contact-form">
+                <form action="/email.php" method="POST">
+                    <h2>Send Message</h2>
+                    <div class="input-box">
+                        <input type="text" name="name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="input-box">
+                        <textarea required="required" name="message"></textarea>
+                        <span>Your Message...</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </section>
+    <div id="footer"></div>
+</body>
+</html>

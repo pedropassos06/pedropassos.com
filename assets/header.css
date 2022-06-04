@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.header-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-left-logo {
+    height: 72px;
+}
+
+.header-left-my-name {
+    font-family: 'Courier Prime', monospace;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.header-left-my-name:hover {
+    color: grey;
+}
+
+.header-menu {
+    display: flex;
+    gap: 16px;
+}
+
+.header-menu-item {
+    font-family: 'Courier Prime', monospace;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 6px 15px;
+    position: relative;
+}
+
+.header-menu-item:after {
+    content: "";
+    position: absolute;
+    background-color: #d4b32b;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.header-menu-item:hover:after {
+    width: 100%;
+}

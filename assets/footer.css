@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.footer-content {
+    padding: 16px;
+    /* border-top: 0.4px solid #FFF2E7; */
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-blend-mode: multiply,multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    clear: both;
+}
+
+.footer-content-center {
+    text-align: center;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-content-left {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-content-right {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+#footer-social {
+    font-size: 20px;
+    color: #fff;
+}
