@@ -13,7 +13,7 @@ body {
     width: 100%;
     overflow: auto;
     position: relative;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-color: #050801;
 }
 
 .container {
