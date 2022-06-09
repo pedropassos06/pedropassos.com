@@ -10,13 +10,12 @@
 
 .footer-content {
     padding: 16px;
-    /* border-top: 0.4px solid #FFF2E7; */
     display: flex;
     bottom: 0;
     position: absolute;
     width: 100%;
     justify-content: space-between;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-color: #050801;
     background-blend-mode: multiply,multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -49,4 +48,15 @@
 #footer-social {
     font-size: 20px;
     color: #fff;
+}
+
+#footer-social:hover {
+    text-shadow:
+    -0.2rem -0.2rem 1rem #fff,
+    0.2rem 0.2rem 1rem #fff,
+    0 0 2rem #f40,
+    0 0 4rem #f40,
+    0 0 6rem #f40,
+    0 0 8rem #f40,
+    0 0 10rem #f40;
 }
