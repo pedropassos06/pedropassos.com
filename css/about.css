@@ -132,3 +132,10 @@ body {
         bottom: 100%;
     }
 }
+
+@media (max-width: 960px) {
+    .main-body {
+        display: flex;
+        flex-direction: column;
+    }
+}

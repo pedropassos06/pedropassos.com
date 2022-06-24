@@ -7,27 +7,30 @@
 }
 
 body {
+    background-color: #050801;
+    width: 100%;
     min-height: 100vh;
     font-size: 100%;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    background-color: #050801;
+    overflow: auto;
+    position: relative;
 }
 
 .contact {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    padding: 50px 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    min-height: 100vh;
 }
 
 .contact .contact-content {
     max-width: 800px;
     text-align: center;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact .contact-content .contact-content-header {
@@ -45,6 +48,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    gap: 20vh;
 }
 
 .container .contact-info {
@@ -58,81 +62,6 @@ body {
     position: relative;
     padding: 20px 0;
     display: flex;
-}
-
-.borders:nth-child(1) {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
-    animation: top-animation 1s linear infinite;
-}
-
-@keyframes top-animation {
-    0% {
-        left: -100%;
-    }
-    50%,100% {
-        left: 100%;
-    }
-}
-
-.borders:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
-    animation: right-animation 1s linear infinite;
-    animation-delay: 0.25s;
-}
-
-@keyframes right-animation {
-    0% {
-        top: -100%;
-    }
-    50%,100% {
-        top: 100%;
-    }
-}
-
-.borders:nth-child(3) {
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
-    animation: bottom-animation 1s linear infinite;
-    animation-delay: 0.5s;
-}
-
-@keyframes bottom-animation {
-    0% {
-        right: -100%;
-    }
-    50%,100% {
-        right: 100%;
-    }
-}
-
-.borders:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
-    animation: left-animation 1s linear infinite;
-    animation-delay: 0.75s;
-}
-
-@keyframes left-animation {
-    0% {
-        bottom: -100%;
-    }
-    50%,100% {
-        bottom: 100%;
-    }
 }
 
 .container .contact-info .box .icon {
@@ -171,10 +100,14 @@ body {
 }
 
 .contact-form {
-    width: 40%;
-    padding: 40px;
+    width: 40vw;
+    height: 40vh;
+    padding: 0 40px;
     background: #fff;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .contact-form h2 {
@@ -240,12 +173,31 @@ body {
 }
 
 @media (max-width: 991px) {
+    .contact .contact-content .contact-content-header {
+        font-size: 2.5rem;
+        border-bottom: 3.4px solid #d4b32b;
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
     .contact {
         padding: 50px;
     }
 
+    .contact-form {
+        margin-top: -10rem;
+        margin-bottom: 5rem;
+        width: 100%;
+    }
+
     .container {
         flex-direction: column;
+        gap: -2.5vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-wrapper {
+        padding: -20px 0;
     }
 
     .container .contact-info {

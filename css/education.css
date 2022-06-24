@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     font-size: 100%;
     overflow: auto;
+    position: relative;
 }
 
 .main-content {
@@ -30,29 +31,6 @@ body {
     width: 30vw;
     height: 40vh;
     border: none;
-}
-
-
-.main-content-school:hover:nth-child(1) {
-    cursor: pointer;
-    transform: translateY(-0.4rem);
-    box-shadow: 0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem #009933,
-    0 0 0.8rem #009933,
-    0 0 2.8rem #009933,
-    inset 0 0 1.3rem #009933;
-}
-
-.main-content-school:hover:nth-child(2) {
-    cursor: pointer;
-    transform: translateY(-0.4rem);
-    box-shadow: 0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem #2196f3,
-    0 0 0.8rem #2196f3,
-    0 0 2.8rem #2196f3,
-    inset 0 0 1.3rem #2196f3;
 }
 
 .img-wrapper {
@@ -132,4 +110,23 @@ body {
 .button:hover {
     background: #08f;
     box-shadow: 0 0 5px #08f, 0 0 25px #08f, 0 0 50px #08f, 0 0 200px #08f;
+}
+
+@media (max-width: 960px) {
+
+    body {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-school {
+        width: 100%;    
+    }
 }
