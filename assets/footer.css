@@ -5,29 +5,27 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    z-index: 10;
+}
+
+.footer-content-left-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .footer-content {
-    padding: 16px;
     display: flex;
     bottom: 0;
     position: absolute;
     width: 100%;
     justify-content: space-between;
+    padding: 0 2%;
     background-color: #050801;
     background-blend-mode: multiply,multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
     clear: both;
-}
-
-.footer-content-center {
-    text-align: center;
-    font-family: 'Courier Prime', monospace;
-    font-weight: 300;
-    font-size: 18px;
-    color: #fff;
+    padding: 16px;
 }
 
 .footer-content-left {
@@ -36,13 +34,29 @@
 }
 
 .footer-content-right {
-    font-family: 'Courier Prime', monospace;
-    font-weight: 300;
-    font-size: 14px;
-    color: #fff;
+    width: 2rem;
+    height: 3.5vh;
+    background: #fff;
     display: flex;
-    flex-direction: column;
-    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    font-size: 13px;
+    transition: 0.7s;
+    border-width: 0;
+}
+
+.footer-content-right::after {
+    transition-delay: 0.7s;
+}
+
+.footer-content-right:hover {
+    font-size: 0;
+    content: "Contact Me";
+    font-size: 13px;
+    font-family: 'Courier Prime', monospace;
+    width: 6rem;
+    cursor: pointer;
 }
 
 #footer-social {
@@ -59,4 +73,17 @@
     0 0 6rem #f40,
     0 0 8rem #f40,
     0 0 10rem #f40;
+}
+
+@media (max-width: 960px) {
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-content-right {
+        font-size: 0px;
+        content: "Contact Me";
+        font-size: 13px;
+    }
 }

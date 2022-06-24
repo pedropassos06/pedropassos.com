@@ -145,3 +145,10 @@ body {
     font-size: 12px;
     font-family: 'Courier Prime', monospace;
 }
+
+@media (max-width: 960px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
