@@ -38,7 +38,8 @@
 
 .header-left-my-name:hover {
     color: #fff;
-    text-shadow:       0 0 7px #fff,
+    text-shadow:
+    0 0 7px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
     0 0 42px #0fa,
@@ -105,14 +106,6 @@ input {
     label:hover {
         color: #fff;
         cursor: pointer;
-        text-shadow: 0 0 4px #fff,
-        0 0 10px #fff,
-        0 0 18px #fff,
-        0 0 38px #5271ff,
-        0 0 73px #5271ff,
-        0 0 80px #5271ff,
-        0 0 94px #5271ff,
-        0 0 140px #5271ff;
     }
 
     label .close-btn {
@@ -147,5 +140,15 @@ input {
         display: block;
         padding-right: 10px;
         position: fixed;
-      }
+    }
+
+    .header-left-my-name {
+        color: #fff;
+        text-shadow: none;
+    }
+
+    .header-menu-item:hover {
+        color: #fff;
+        text-shadow: none;
+    }
 }
