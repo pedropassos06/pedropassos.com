@@ -1,58 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/assets/header.css">
-    <link rel="stylesheet" href="/assets/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>About</title>
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
-    <script>  
-    $(function(){ 
-        $("#header").load("/assets/header.html");  
-        $("#footer").load("/assets/footer.html");  
-    }); 
-    </script> 
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="/images/logo-principal.png" />
+        <link rel="stylesheet" type="text/css" href="/css/about.css">
+        <link rel="stylesheet" href="/assets/header.css">
+        <link rel="stylesheet" href="/assets/footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Work Experience</title>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+        <script>  
+        $(function(){ 
+            $("#header").load("/assets/header.html");  
+            $("#footer").load("/assets/footer.html");  
+        }); 
+        </script> 
+    </head>
 <body>
-
     <div id="header"></div>
 
-    <div class="main-body">
-        <a class="button" href="/html/life.html">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            My Journey
-        </a>
-        <a class="button" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Work Experience
-        </a>
-        <a class="button" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Hobbies
-        </a>
-        <a class="button" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            My Roots
-        </a>
+    <div class="wrapper">
+        <div class="section-container">
+
+            <p class="section-title">Education</p>
+
+            <div class="main-content">
+                <div class="img-wrapper">
+                    <img src="/images/malden-high.png" class="main-content-school zoom">
+                    <div class="content fade">
+                        <h3 class="education-header">Graduate</h3>
+                        <p class="education-text">
+                        I graduated from Malden High School in May of 2019 with Honor Roll. <br>
+                        While at Malden High, I was awarded with the Posse Scholarship. A full-tuition, 4-year scholarship
+                        to attend Bucknell University <br>
+                        GPA: 3.78/4.0
+                        </p>
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <img src="/images/bucknell.png" class="main-content-school zoom">
+                    <div class="content fade">
+                        <h3 class="education-header">B.S. Electrical & Computer Engineering</h3>
+                        <p class="education-text">
+                        I am a Senior at Bucknell University majoring in Computer Engineering. <br>
+                        I am also pursuing Mathematics and Computer Science minors. <br>
+                        The goal is to graduate with Magna Cum Laude honor. <br>
+                        GPA: 3.92/4.0
+                        </p>
+                        <a class="courses-button" href="/html/courses-taken.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Courses Taken
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="section-title">Programming Languages</p>
+
+            <div class="programming-languages-container">
+                <img class="programming-language" src="/images/java-logo.png" alt="Java Logo">
+                <img class="programming-language" src="/images/python-logo.png" alt="Python Logo">
+                <img class="programming-language" src="/images/html5.png" alt="HTML5 Logo">
+                <img class="programming-language" src="/images/css3.png" alt="CSS3 Logo">
+                <img class="programming-language" src="/images/javascript.png" alt="Javascript Logo">
+                <img class="programming-language" src="/images/c.png" alt="C Logo">
+
+            </div>
+
+            <p class="section-title">Work Experience</p>
+
+            <div class="section-content">
+                <img class="work-image" src="/images/prodigies-by-pedro.gif" alt="Prodigies by Pedro Logo">
+                <div class="middle-content">
+                    <h3 class="middle-content-header">Prodigies by Pedro</h3>
+                    <h4 class="middle-content-subheader"><em>Founder/Tutor</em></h4>
+                    <br>
+                    <ul>
+                        <li>Providing full assistance in any math subject up to multivariable calculus and
+                            differential equations.</li>
+                        <li>Enhancing students learning by teaching a variety of special approaches and
+                            real-life examples to solve problems.</li>
+                        <li>Reviewing students' performance after each lesson to go over common
+                            mistakes made, coming up with new techniques to help understanding, resulting
+                            in up to 30% improvement in exam grades.</li>
+                      </ul>
+                </div>
+                <div class="duration-container">
+                    <h2 class="duration-period">Aug 2020 -<br>Current</h2>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <img class="work-image" src="/images/constellation-logo.png" alt="Constellation Logo">
+                <div class="middle-content">
+                    <h3 class="middle-content-header">Constellation Energy</h3>
+                    <h4 class="middle-content-subheader"><em>Computer Engineering Intern</em></h4>
+                    <br>
+                    <ul>
+                        <li>Under progress...</li>
+                    </ul>
+                </div>
+                <div class="duration-container">
+                    <h2 class="duration-period">Jun 2022 -<br>Current</h2>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <img class="work-image" src="/images/dunkin-logo.png" alt="Dunkin' Logo">
+                <div class="middle-content">
+                    <h3 class="middle-content-header">Dunkin' Donuts</h3>
+                    <h4 class="middle-content-subheader"><em>Shift Leader</em></h4>
+                    <br>
+                    <ul>
+                        <li>Innovated the way of taking orders, elevating the store’s rank to first in the
+                            Smart Sell Leaderboard Rank in the Boston area</li>
+                        <li>Developed a new itinerary to complete shift tasks, increasing daily positive
+                            feedback from the area manager by 50%</li>
+                    </ul>
+                </div>
+                <div class="duration-container">
+                    <h2 class="duration-period">Feb 2019 -<br>Aug 2021</h2>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <img class="work-image" src="/images/events-by-bh.png" alt="Events by BH Logo">
+                <div class="middle-content">
+                    <h3 class="middle-content-header">Events by BH</h3>
+                    <h4 class="middle-content-subheader"><em>Shift Leader</em></h4>
+                    <br>
+                    <ul>
+                        <li>Setting tables, food preparation, food and drink serving, informing kitchen staff
+                            of meal progression times.</li>
+                        <li>Opening and closing duties, removing dinnerware, washing dishes, attending
+                            special requests.</li>
+                      </ul>
+                </div>
+                <div class="duration-container">
+                    <h2 class="duration-period">Apr 2017 -<br>Aug 2019</h2>
+                </div>
+            </div>
+
+            <p class="section-title">If you would like to know more...</p>
+
+            <div class="main-body">
+                <a class="button" href="/html/life.html">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    My Journey
+                </a>
+                <!-- <a class="button" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Hobbies (Soon)
+                </a>
+                <a class="button" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    My Roots (Soon)
+                </a> -->
+            </div>        
+
+        </div>
     </div>
 
     <div id="footer"></div>
-
 </body>
 </html>

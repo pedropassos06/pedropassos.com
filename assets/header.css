@@ -82,7 +82,7 @@ label {
     z-index: 3;
 }
 
-input {
+.checkbox {
     display: none;
 }
 
