@@ -38,7 +38,6 @@ body {
 
 .programming-language:hover {
     transform: translateY(-0.4rem);
-    -webkit-filter: drop-shadow(2px 2px 2px #fff);
 }
 
 .section-title {
@@ -83,6 +82,51 @@ ul {
 
 .duration-period {
     font-size: 1.5rem;
+}
+
+@media (max-width: 960px) {
+
+    .section-title {
+        text-align: center;
+    }
+
+    .programming-languages-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .programming-language {
+        width: 8rem;
+        height: 80%;
+        -webkit-filter: drop-shadow(2px 2px 2px #fff);
+    }
+
+    .section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .middle-content {
+        color: white;
+        max-width: 100%;
+        min-width: 100%;
+        text-align: left;
+    }
+
+    .work-image {
+        width: 9rem;
+        height: 80%;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .duration-container {
+        text-align: right;
+    }
 }
 
 /* If you would like to know more */
