@@ -19,6 +19,13 @@ body {
     padding: 10vh 14vw;
 }
 
+.main-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.7rem;
+}
+
 .section-container {
     display: flex;
     flex-direction: column;
@@ -27,11 +34,13 @@ body {
 
 .programming-languages-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 4rem;
+    justify-content: center;
 }
 
 .programming-language {
-    width: 10rem;
+    width: 9rem;
     height: 80%;
     -webkit-filter: drop-shadow(2px 2px 2px #fff);
 }
@@ -169,7 +178,6 @@ ul {
     color: #050801;
     background: #03E9F4;
     box-shadow: 0 0 5px #03E9F4, 0 0 25px #03E9F4, 0 0 50px #03E9F4, 0 0 200px #03E9F4;
-    transition-delay: 0.15s;
 }
 
 .button span {
@@ -373,6 +381,33 @@ ul {
     }
 
     .main-content-school {
-        width: 100%;    
+        width: 25rem;
+        height: 25rem;
     }
+
+    .fade {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .education-text {
+        font-size: 0;
+    }
+
+    .img-wrapper.hover .img-wrapper:active > .content.fade {
+        cursor: pointer;
+        opacity: 1;
+    }
+    
+    .img-wrapper.clicked .img-wrapper:active > img.zoom {
+        transform: scale(1.1);
+    }
+
+    .button {
+        color: #050801;
+        background: #03E9F4;
+        box-shadow: 0 0 5px #03E9F4, 0 0 25px #03E9F4, 0 0 50px #03E9F4;
+    }
+
 }

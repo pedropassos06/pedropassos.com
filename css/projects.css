@@ -10,13 +10,102 @@
 body {
     min-height: 100vh;
     font-size: 100%;
-    padding-top: 120px;
     padding-bottom: 48px;
+    padding-top: 11vh;
     overflow: auto;
     position: relative;
+    background: #050801;
 }
 
-.project-description {
+.project-header {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.wrapper {
+    padding: 5vh 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-container {
+    background-color: white;
+    border: 0.2rem solid gray;
+}
+
+.project-container:hover {
+    transform: translateY(-0.5rem);
+    border: 0.2rem solid #008000;
+}
+
+.project-image {
+    width: 17rem;
+    height: 17rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.one {
+    background-image: url("/images/wordfx.png");
+}
+
+.two {
+    background-image: url("/images/vehicle-detection.png");
+}
+
+.three {
+    background-image: url("/images/maze-pathfinding.png");
+}
+
+.four {
+    background-image: url("/images/DAMNED-project.png");
+}
+
+.five {
+    background-image: url("/images/reaction-timer.png");
+}
+
+.project-description-container {
+    padding-top: 1rem;
+    background-color: white;
+    width: 17rem;
+    min-height: 10rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.project-description-header {
+    text-align: center;
+}
+
+.project-button {
+    color: #050801;
+    /* display: inline-block;
+    align-self: flex-end; */
+}
+
+.project-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .project-description {
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -132,7 +221,7 @@ body {
 p {
     display: flex;
     justify-content: flex-start;
-}
+} */
 
 
 

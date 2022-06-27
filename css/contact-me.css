@@ -180,6 +180,9 @@ body {
         margin-bottom: 0;
     }
     .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
         padding: 50px;
     }
 
