@@ -106,7 +106,7 @@ ul {
     }
 
     .programming-language {
-        width: 8rem;
+        width: 30vw;
         height: 80%;
         -webkit-filter: drop-shadow(2px 2px 2px #fff);
     }
@@ -298,7 +298,7 @@ ul {
     inset: 0;
     padding: 1rem;
     background: rgba(255, 255, 255, 0.7);
-    text-align: center;
+
 }
 
 .education-header {
@@ -381,8 +381,8 @@ ul {
     }
 
     .main-content-school {
-        width: 25rem;
-        height: 25rem;
+        width: 80vw;
+        height: 25vh;
     }
 
     .fade {
@@ -395,12 +395,12 @@ ul {
         font-size: 0;
     }
 
-    .img-wrapper.hover .img-wrapper:active > .content.fade {
+    .img-wrapper:hover > .content.fade {
         cursor: pointer;
         opacity: 1;
     }
     
-    .img-wrapper.clicked .img-wrapper:active > img.zoom {
+    .img-wrapper:hover > img.zoom {
         transform: scale(1.1);
     }
 
