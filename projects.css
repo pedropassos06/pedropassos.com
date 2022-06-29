@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
     font-size: 100%;
     padding-bottom: 48px;
-    padding-top: 11vh;
+    padding-top: 9rem;
     overflow: auto;
     position: relative;
     background: #050801;
@@ -24,7 +24,7 @@ body {
 }
 
 .wrapper {
-    padding: 5vh 10vw;
+    padding-top: 8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -85,8 +85,6 @@ body {
 
 .project-button {
     color: #050801;
-    /* display: inline-block;
-    align-self: flex-end; */
 }
 
 .project-button:hover {
@@ -94,136 +92,3 @@ body {
     text-decoration: underline;
     color: red;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* .project-description {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-description:nth-of-type(2) {
-    background-image: url("/images/wordfx.png");
-}
-
-.project-description:nth-of-type(3) {
-    background-image: url("/images/vehicle-detection.png");
-}
-
-.project-description:nth-of-type(4) {
-    background-image: url("/images/maze-pathfinding.png");
-}
-
-.project-description:nth-of-type(5) {
-    background-image: url("/images/DAMNED-project.png");
-}
-
-.project-name {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Courier Prime', monospace;
-    font-size: 48px;
-    font-weight: 500;
-    color: #fff;
-    padding: 16px;
-    background: black;
-    opacity: 0.7;
-    border-radius: 20px;
-    box-shadow: inset 0 0 0 0 #d4b32b;
-    transition: ease-out 0.3s;
-}
-
-.project-name:hover {
-    box-shadow: inset 12em 0 0 0 #d4b32b;
-    cursor: pointer;
-    color: #000;
-}
-
-.modal_container {
-    background-color: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.modal_container.show {
-    pointer-events: auto;
-    opacity: 1;
-}
-
-.project-modal {
-    background-color: #121213;
-    width: 600px;
-    max-width: 100%;
-    padding: 30px 50px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    font-family: 'Courier Prime', monospace;
-    color: #fff;
-}
-
-.project-aspects {
-    padding-top: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.project-modal-header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #fff;
-    align-items: center;
-    border-bottom: 1px solid #fff;
-}
-
-.project-aspect-header {
-    display: flex;
-    justify-content: flex-start;
-    background-color: #fff;
-    color: #121213;
-    padding: 4px;
-}
-
-.close-button {
-    background: none;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: 2.5rem;
-    color: #fff;
-}
-
-p {
-    display: flex;
-    justify-content: flex-start;
-} */
-
-
-
-
-
